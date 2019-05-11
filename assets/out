@@ -35,7 +35,7 @@ fi
 [ -n "$AWS_DEFAULT_REGION" ] && export AWS_DEFAULT_REGION
 
 cd "$source/$dir"
-eval aws s3 sync $source "s3://$bucket/$path" $options		 echo "Uploading to S3 from '$dir'..."
+echo "Uploading to S3 from '$dir'..."
 eval aws s3 sync $source/$dir "s3://$bucket/$path" $options
 echo "...done."
 
