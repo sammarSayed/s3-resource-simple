@@ -64,3 +64,10 @@ located (if this is set, AWS_DEFAULT_REGION env variable will be set accordingly
 ```yaml
 region: eu-west-2
 ```
+
+### Sync
+By default files will be synced from s3. Disabling this will only upload new files.
+
+```yaml
+sync: false
+```
