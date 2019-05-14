@@ -35,7 +35,7 @@ fi
 # Export AWS_DEFAULT_REGION if set
 [ -n "$AWS_DEFAULT_REGION" ] && export AWS_DEFAULT_REGION
 
-if [ "$dosync" === "true" ]; then
+if [ "$dosync" == "true" ]; then
   echo "Downloading from S3..."
   eval aws s3 sync "s3://$bucket/$path" $dest $options
   echo "...done."
